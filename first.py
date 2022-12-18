@@ -15,7 +15,7 @@ default_dag_args = {
 'retry delay': timedelta (minutes=5),
 'project_id': 1
 }
-# let's define our DAG
+# defining the DAG
 
 with DAG("first_DAG" ,schedule_interval = None, default_args = default_dag_args) as dag:
 
