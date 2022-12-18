@@ -72,5 +72,5 @@ with DAG("market_data_dag", schedule_interval = '@daily', catchup=False, default
 
 
 
-    task_0 = PythonOperator(task_id = "get_market_data", python_callable = get_data,op_kwargs = {'tickers' :'IBM'})
+    task_0 = PythonOperator(task_id = "get_market_data", python_callable = get_data,op_kwargs = {'ticker' :'IBM'})
 task_0
