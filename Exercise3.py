@@ -29,7 +29,7 @@ def get_data(**kwargs):
         r = requests.get(url)
         try:  
             data = r.json()
-            # Saving the data to a file in the DATA_LAKE folder
+            # Saving the data to DATA_LAKE folder
             with open(os.path.join(path, "market_data.json"), "w") as f:
                 json.dump(data, f)
         except:
