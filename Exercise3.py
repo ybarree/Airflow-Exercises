@@ -21,11 +21,11 @@ def get_data(**kwargs):
     url2 = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSCO.LON&outputsize=full&apikey=' + api_key
     url3 = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SHOP.TRT&outputsize=full&apikey=' + api_key
 
-    # Creating a list of URLs
+    # a list of URLs
     urls = [url1, url2, url3]
 
     for url in urls:
-        # Make request to the URL
+        # Making request to the URL
         r = requests.get(url)
         try:  
             data = r.json()
